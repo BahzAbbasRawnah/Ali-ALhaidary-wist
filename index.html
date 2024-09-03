@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="h-24 flex justify-between items-center p-4">
+            <div class="input-box flex-grow">
+                <input class="outline-gray-500 p-2 rounded-lg w-48" type="text" placeholder="Search">
+            </div>
+            <button id="cart-button" type="button"
+                class="relative inline-flex items-center p-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <!-- أيقونة السلة -->
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M7 4V2H2V4H4L6 9V20H16V9L18 4H22V2H19.66L17.42 4H6.59L4.34 2H2V4H0V6H1.34L2 7H3L4.5 13L5.68 17.74L6.15 20H18.85L19.32 17.74L20.5 13L22 7H23.66L24 6H22V4H19.66L18.42 2H17.5L15.7 4H7ZM18.54 16H7.46L6.35 13H18.65L17.54 16H18.54Z" />
+                </svg>
+                <span class="sr-only">Cart</span>
+                <div id="cart-number"
+                    class="absolute inline-flex items-center justify-center w-16 -top-4 h-6 text-xs font-bold text-white bg-red-500 border-2 border-white rounded-full -top-2 -end-2 dark:border-gray-900">
+                    0</div>
+            </button>
+        </nav>
+        <div class="menubar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="px-8 mt-8">
+        <h1 class="text-[32px] font-bold">Offer Products</h1>
+        <section class="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-8 gap-4">
+
+
+            <!-- Product 1 -->
+            <div
+                class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-80">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-32" src="./img/product.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 2023
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2500$</p>
+                    <div class="flex items-center space-x-4">
+                        <button class="decrement bg-gray-700 text-white px-2 py-1 rounded-lg">-</button>
+                        <span class="quantity text-xl">0</span>
+                        <button class="increment bg-gray-700 text-white px-2 py-1 rounded-lg">+</button>
+                        <button data-price="2500"
+                            class=" hidden buy-now inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Add to Cart
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="top-4 absolute bg-red-400 px-8 rounded-r-lg">
+                    <p class="text-white">$2300</p>
+                </div>
+            </div>
+            <div
+                class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-80">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-32" src="./img/product.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 2023
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2500$</p>
+                    <div class="flex items-center space-x-4">
+                        <button class="decrement bg-gray-700 text-white px-2 py-1 rounded-lg">-</button>
+                        <span class="quantity text-xl">0</span>
+                        <button class="increment bg-gray-700 text-white px-2 py-1 rounded-lg">+</button>
+                        <button data-price="2500"
+                            class="hidden buy-now inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Add to Cart
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="top-4 absolute bg-red-400 px-8 rounded-r-lg">
+                    <p class="text-white">$2300</p>
+                </div>
+            </div>
+
+            <!-- Repeat for Product 2, adjusting the data-price attribute accordingly -->
+
+        </section>
+        <h1 class="text-[32px] font-bold">All Products</h1>
+        <section class="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 mt-8 gap-4">
+
+
+            <div
+                class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-80">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-32" src="./img/product.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 2023
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2500$</p>
+                    <div class="flex items-center space-x-4">
+                        <button class="decrement bg-gray-700 text-white px-2 py-1 rounded-lg">-</button>
+                        <span class="quantity text-xl">0</span>
+                        <button class="increment bg-gray-700 text-white px-2 py-1 rounded-lg">+</button>
+                        <button data-price="2500"
+                            class="hidden buy-now inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Add to Cart
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div
+                class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-80">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-32" src="./img/product.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 2023
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2500$</p>
+                    <div class="flex items-center space-x-4">
+                        <button class="decrement bg-gray-700 text-white px-2 py-1 rounded-lg">-</button>
+                        <span class="quantity text-xl">0</span>
+                        <button class="increment bg-gray-700 text-white px-2 py-1 rounded-lg">+</button>
+                        <button data-price="2500"
+                            class="hidden buy-now inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Add to Cart
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div
+                class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-80">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-32" src="./img/product.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 2023
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2500$</p>
+                    <div class="flex items-center space-x-4">
+                        <button class="decrement bg-gray-700 text-white px-2 py-1 rounded-lg">-</button>
+                        <span class="quantity text-xl">0</span>
+                        <button class="increment bg-gray-700 text-white px-2 py-1 rounded-lg">+</button>
+                        <button data-price="2500"
+                            class="hidden buy-now inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Add to Cart
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div
+                class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-80">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-32" src="./img/product.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 2023
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2500$</p>
+                    <div class="flex items-center space-x-4">
+                        <button class="decrement bg-gray-700 text-white px-2 py-1 rounded-lg">-</button>
+                        <span class="quantity text-xl">0</span>
+                        <button class="increment bg-gray-700 text-white px-2 py-1 rounded-lg">+</button>
+                        <button data-price="2500"
+                            class="hidden buy-now inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Add to Cart
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div
+                class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-80">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-32" src="./img/product.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 2023
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2500$</p>
+                    <div class="flex items-center space-x-4">
+                        <button class="decrement bg-gray-700 text-white px-2 py-1 rounded-lg">-</button>
+                        <span class="quantity text-xl">0</span>
+                        <button class="increment bg-gray-700 text-white px-2 py-1 rounded-lg">+</button>
+                        <button data-price="2500"
+                            class="hidden buy-now inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Add to Cart
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div
+                class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-80">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-32" src="./img/product.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 2023
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2500$</p>
+                    <div class="flex items-center space-x-4">
+                        <button class="decrement bg-gray-700 text-white px-2 py-1 rounded-lg">-</button>
+                        <span class="quantity text-xl">0</span>
+                        <button class="increment bg-gray-700 text-white px-2 py-1 rounded-lg">+</button>
+                        <button data-price="2500"
+                            class="hidden buy-now inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Add to Cart
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div
+                class="relative max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-80">
+                <a href="#">
+                    <img class="rounded-t-lg w-full h-32" src="./img/product.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Camera 2023
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">2500$</p>
+                    <div class="flex items-center space-x-4">
+                        <button class="decrement bg-gray-700 text-white px-2 py-1 rounded-lg">-</button>
+                        <span class="quantity text-xl">0</span>
+                        <button class="increment bg-gray-700 text-white px-2 py-1 rounded-lg">+</button>
+                        <button data-price="2500"
+                            class="hidden buy-now inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            Add to Cart
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+        
+            </div>
+
+            <!-- Repeat for Product 2, adjusting the data-price attribute accordingly -->
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
